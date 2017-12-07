@@ -1,0 +1,7 @@
+public class WeatherMapper extends Mapper<key,value,outputkey,outputvalue>
+{
+ public void map(KEYIN key, VALUEIN value, 
+                    Context context) throws IOException, InterruptedException {
+    context.write((KEYOUT) key, (VALUEOUT) value);
+ }
+}
